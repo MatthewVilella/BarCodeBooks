@@ -71,7 +71,8 @@ export default function LogInMenu({ navigation }) {
         let user = { user: email };
 
         try {
-            const res = await axios.post('http://10.0.0.32:9000/userPersonalDataBase', user);
+            //Enter IP for local Host to work
+            const res = await axios.post('http://Enter IP for local Host to work:9000/userPersonalDataBase', user);
         } catch (error) {
             console.log(error.message);
         }

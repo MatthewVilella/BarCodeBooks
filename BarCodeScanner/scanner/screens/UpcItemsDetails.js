@@ -25,7 +25,8 @@ export default function UpcItemsDetails({ navigation }) {
         let user = { user: email };
 
         try {
-            const res = await axios.post('http://10.0.0.32:9000/userPersonalDataBase', user);
+            //Enter IP for local Host to work
+            const res = await axios.post('http://Enter IP for local Host to work:9000/userPersonalDataBase', user);
         } catch (error) {
             console.log(error.message);
         }
@@ -36,7 +37,8 @@ export default function UpcItemsDetails({ navigation }) {
         let deleteBook = { deleteBooksIsbn: navigation.getParam('isbn'), userDeleting: email };
 
         try {
-            const res = await axios.post('http://10.0.0.32:9000/deleteBook', deleteBook);
+           //Enter IP for local Host to work
+            const res = await axios.post('http://Enter IP for local Host to work:9000/deleteBook', deleteBook);
         } catch (error) {
             console.log(error.message);
         }

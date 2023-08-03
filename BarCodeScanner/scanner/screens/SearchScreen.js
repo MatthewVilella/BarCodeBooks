@@ -30,7 +30,8 @@ export default function SearchScreen({ navigation }) {
 
     // Fetches the data from the User's database
     const fetchUsersDataBase = () => {
-        fetch('http://10.0.0.32:9000/data')
+        //Enter IP for local Host to work
+        fetch('http://Enter IP for local Host to work:9000/data')
             .then((response) => response.json())
             .then((responseJson) => {
                 setIsLoading(false);
@@ -87,7 +88,8 @@ export default function SearchScreen({ navigation }) {
         let user = { user: email };
 
         try {
-            const res = await axios.post('http://10.0.0.32:9000/userPersonalDataBase', user);
+            //Enter IP for local Host to work
+            const res = await axios.post('http://Enter IP for local Host to work:9000/userPersonalDataBase', user);
         } catch (error) {
             console.log(error.message);
         }
@@ -98,7 +100,8 @@ export default function SearchScreen({ navigation }) {
         let user = { user: email };
 
         try {
-            const res = await axios.post('http://10.0.0.32:9000/deleteUser', user);
+            //Enter IP for local Host to work
+            const res = await axios.post('http://Enter IP for local Host to work:9000/deleteUser', user);
         } catch (error) {
             console.log(error.message);
         }

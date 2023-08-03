@@ -45,7 +45,8 @@ export default function BarcodeScannerModal({ closeModal }) {
                 // Send scanned data to the server using axios
                 const apiPostScannedData = async () => {
                     try {
-                        const res = await axios.post('http://10.0.0.32:9000/book', usersScannedData);
+                        //Enter IP for local Host to work
+                        const res = await axios.post('http://Enter IP for local Host to work:9000/book', usersScannedData);
                     } catch (error) {
                         console.log(error.message);
                     }
